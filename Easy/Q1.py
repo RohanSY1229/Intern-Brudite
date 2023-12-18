@@ -4,7 +4,7 @@
 # ● If a number is divisible by both 3 and 5 it should print “Brudite - Python
 # Training” as a string.
 
-def func1(num):
+def funct1(num):
     if(num % 3 == 0):
 
         if(num % 5 == 0):
