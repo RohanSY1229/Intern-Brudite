@@ -4,20 +4,23 @@
 # Input: wwwwaaadebbbbbw
 # Output: w4a3d1e1b5w1
 
-def encoding(str):
-    res = ""
+def encoding_string(str):
+    if not str:
+        return ""
+
+    encoded = ""
     count = 1
 
     for i in range(1, len(str)):
         if str[i] == str[i - 1]:
             count += 1
-
         else:
-            res += str[i - 1] + str(count)
+            encoded += f"{str[i - 1]}{count}"
             count = 1
 
-        res += str[-1] + str(count)
+    encoded += f"{str[-1]}{count}"
 
-    return res
+    return encoded
 
-print(encoding('aaassdkkffjjeexvb'))
+string = 'aaassdkkffjjeexvb'
+print(encoding_string(string))
