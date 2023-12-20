@@ -5,7 +5,6 @@
 
 def func(num):
     while num >= 10:
-        
         digit_sum = 0
         while num > 0:
             digit_sum += num % 10
