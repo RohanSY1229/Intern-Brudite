@@ -1,25 +1,21 @@
-import java.util.*;
-import java.util.stream.Stream;
-import java.util.stream.Collectors;
+// import java.util.*;
+// import java.util.stream.Stream;
+// import java.util.stream.Collectors;
 
-// #1 Create a Dummy List, Map, and Set for Stream:
+// // #1 Create a Dummy List, Map, and Set for Stream:
 
 // public class StreamsAPI {
 // public static void main(String[] args) {
-// List<String> list = new ArrayList<>();
-// list.add("apple");
-// list.add("banana");
-// list.add("orange");
+// List<String> list = Arrays.asList("ruby", "java", "java");
 
 // List<String> dummyList = list.stream()
-// .map(String::toUpperCase)
 // .collect(Collectors.toList());
 
-// Map<Integer, String> dummyMap = list.stream()
-// .collect(Collectors.toMap(String::length, String::toUpperCase));
+// Map<String, Long> dummyMap = list.stream()
+// .collect(Collectors.groupingBy(e -> e, Collectors.mapping(e -> e.length(),
+// Collectors.counting())));
 
 // Set<String> dummySet = list.stream()
-// .map(String::toUpperCase)
 // .collect(Collectors.toSet());
 
 // System.out.println("Dummy List: " + dummyList);
