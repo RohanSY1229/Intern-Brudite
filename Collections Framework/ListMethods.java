@@ -1,7 +1,7 @@
 // # ArrayList methods
 
 import java.util.ArrayList;
-import java.util.LinkedList;
+// import java.util.LinkedList;
 
 public class ListMethods {
     public static void main(String[] args) {
