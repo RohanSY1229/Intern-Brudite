@@ -1,31 +1,31 @@
 import java.util.*;
-// import java.util.stream.Stream;
+import java.util.stream.Stream;
 import java.util.stream.Collectors;
 
 // #1 Create a Dummy List, Map, and Set for Stream:
 
 // public class StreamsAPI {
-//     public static void main(String[] args) {
-//         List<String> list = new ArrayList<>();
-//         list.add("apple");
-//         list.add("banana");
-//         list.add("orange");
+// public static void main(String[] args) {
+// List<String> list = new ArrayList<>();
+// list.add("apple");
+// list.add("banana");
+// list.add("orange");
 
-//         List<String> dummyList = list.stream()
-//                 .map(String::toUpperCase)
-//                 .collect(Collectors.toList());
+// List<String> dummyList = list.stream()
+// .map(String::toUpperCase)
+// .collect(Collectors.toList());
 
-//         Map<Integer, String> dummyMap = list.stream()
-//                 .collect(Collectors.toMap(String::length, String::toUpperCase));
+// Map<Integer, String> dummyMap = list.stream()
+// .collect(Collectors.toMap(String::length, String::toUpperCase));
 
-//         Set<String> dummySet = list.stream()
-//                 .map(String::toUpperCase)
-//                 .collect(Collectors.toSet());
+// Set<String> dummySet = list.stream()
+// .map(String::toUpperCase)
+// .collect(Collectors.toSet());
 
-//         System.out.println("Dummy List: " + dummyList);
-//         System.out.println("Dummy Map: " + dummyMap);
-//         System.out.println("Dummy Set: " + dummySet);
-//     }
+// System.out.println("Dummy List: " + dummyList);
+// System.out.println("Dummy Map: " + dummyMap);
+// System.out.println("Dummy Set: " + dummySet);
+// }
 // }
 
 // #2 Find the First Non-Repeated Character in a String using Stream Functions
@@ -142,21 +142,21 @@ import java.util.stream.Collectors;
 
 // #8 Find Only Duplicate Elements with Their Count from the String ArrayList
 
-public class StreamsAPI {
-    public static void main(String[] args) {
-        List<String> words = Arrays.asList("apple", "banana", "apple", "orange",
-                "banana", "apple");
+// public class StreamsAPI {
+// public static void main(String[] args) {
+// List<String> words = Arrays.asList("apple", "banana", "apple", "orange",
+// "banana", "apple");
 
-        Map<String, Long> duplicateWordCount = words.stream()
-                .collect(Collectors.groupingBy(e -> e, Collectors.counting()))
-                .entrySet()
-                .stream()
-                .filter(entry -> entry.getValue() > 1)
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+// Map<String, Long> duplicateWordCount = words.stream()
+// .collect(Collectors.groupingBy(e -> e, Collectors.counting()))
+// .entrySet()
+// .stream()
+// .filter(entry -> entry.getValue() > 1)
+// .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
-        System.out.println("Duplicate word count: " + duplicateWordCount);
-    }
-}
+// System.out.println("Duplicate word count: " + duplicateWordCount);
+// }
+// }
 
 // #9 Find the Maximum Element in an Array
 
